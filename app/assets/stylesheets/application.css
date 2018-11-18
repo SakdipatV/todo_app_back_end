@@ -1,4 +1,6 @@
-html{font-family:sans-serif;}
+html{font-family:sans-serif;
+    background-color:#e5eaff;
+}
 .pom-est{
     font-weight: bold;
      color: #00000;
@@ -25,12 +27,12 @@ html{font-family:sans-serif;}
 }
 li{
     list-style-type: none;
-    color:#e00012;
+    color:Black;
 }
     
 li:hover{
     color: blue;
-    background-color:white;
+    background-color:#e5eaff;
 }
 button {
     width:100px;
@@ -38,6 +40,6 @@ button {
     background-color:Black;
     color:White;
 }
-background {
+a {
     color:Black;
 }
