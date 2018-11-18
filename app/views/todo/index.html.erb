@@ -1,13 +1,12 @@
   <ul>
-            <li><input type="checkbox"><a href="show/1">Clean room</a><span class="pom-est">1 pomodoro</span></li>
-            <li><input type="checkbox"><a href="show/2">Eat dinner</a><span class="pom-est">1 pomodoro</span></li>
-            <li><input type="checkbox"><a href="show/3">Watch netflix</a><span class="pom-est">1 pomodoro</span></li>
-            <li><input type="checkbox"><a href="show/4">Play games</a><span class="pom-est">1 pomodoro</span></li>
-            <li><input type="checkbox"><a href="show/5">Work out</a><span class="pom-est">1 pomodoro</span></li>
-            <li><input type="checkbox"><a href="show/6">Shower</a><span class="pom-est">1 pomodoro</span></li>
-            <ul style="list-style: none;">
+             <% @todos.each do |todo| %><li>
+              <input type="checkbox" name=""/>
+  <a href="show/<%= todo.id %>"><%= todo.description %></a>
+  <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+  </li>
+  <%end%>
         </ul>
         <input type= "number" placeholder="number polm">
-        <input id="add-new-todo" type="summit" value="add todo">
+        <a href="new">add todo</a>
         <%= @todo_description %>
 <h3>Todo #<%= params[:id] %></h3>

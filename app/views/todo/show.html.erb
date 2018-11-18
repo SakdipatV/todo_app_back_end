@@ -1,12 +1,6 @@
             <input type="checkbox">
             <h2><%= @todo.description %></h2> 
             <h2><%= @todo.pomodoro_estimate %></h2>
-        <a href="#">Edit</a>
-        <a href="#">Delete</a>
-        <a href="/todo/index.html">Go back</a>
-    <h2>Add a new todo...</h2>
-<form action="#">
-  <input class="text-input" id="new-todo-description" name="description" type="text" placeholder="Add a new todo...">
-  <input class="text-input" id="new-pomodoro-estimate" name="pomodoro_estimate" type="number" placeholder="Pomodoro estimate...">
-  <input class="button" id="add-new-todo-button" type="submit" value="Add todo">
-</form>
+        <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
+        <a href="/todo/destroy/<%= @todo.id %>">Delete</a>
+        <a href="/">Go back</a>
