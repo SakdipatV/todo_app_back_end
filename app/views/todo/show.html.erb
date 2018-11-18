@@ -2,5 +2,5 @@
             <h2><%= @todo.description %></h2> 
             <h2><%= @todo.pomodoro_estimate %></h2>
         <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
-        <a href="/todo/destroy/<%= @todo.id %>">Delete</a>
+        <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
         <a href="/">Go back</a>

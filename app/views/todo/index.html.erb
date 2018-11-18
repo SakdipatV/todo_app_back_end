@@ -1,12 +1,12 @@
   <ul>
+             TO DO LIST
              <% @todos.each do |todo| %><li>
               <input type="checkbox" name=""/>
-  <a href="show/<%= todo.id %>"><%= todo.description %></a>
+  <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a>
   <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
   </li>
   <%end%>
         </ul>
-        <input type= "number" placeholder="number polm">
-        <a href="/todo/new">add todo</a>
-        <%= @todo_description %>
-<h3>Todo #<%= params[:id] %></h3>
+        
+        <a href="/todo/new"> <button class="button" id="add-new-todo-button">ADD TO DO</button></a>
+       
